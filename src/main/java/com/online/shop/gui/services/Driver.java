@@ -15,8 +15,8 @@ public class Driver {
         this.driver = new ChromeDriver();
     }
 
-//    @AfterMethod
-//    public void afterTest(){
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void afterTest(){
+        driver.quit();
+    }
 }
