@@ -1,0 +1,2 @@
+I implemented few tests using a PageObject pattern with page components to reduce code in classes and to make more maintainable and easier to extend in the future. In addition, I tryed to use SOLID principles and try to make a clear folder structure. About tests which include steps for leaving comment and after to log again in the next test to check if the comment is present, I decided to gather them in one test, because every test should be independent and should not be dependent from previous test.
+
