@@ -13,6 +13,8 @@ import java.time.Duration;
 
 public class HomePage extends AbstractPage {
 
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
     @FindBy(xpath = "//*[@class='top-bar clearfix']")
     private Header header;
 
@@ -38,7 +40,6 @@ public class HomePage extends AbstractPage {
     }
 
     public void clickAcceptCokies(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.elementToBeClickable(cokieBtn)).click();
     }
 

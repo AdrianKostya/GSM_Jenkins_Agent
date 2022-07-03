@@ -5,6 +5,8 @@ import com.online.shop.gui.services.Driver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
+
 public class WebTest extends Driver {
 
     @Test
@@ -49,5 +51,15 @@ public class WebTest extends Driver {
         String postedComment = opinionPage.getTxt(nickname);
         Assert.assertEquals(postedComment, commentTxt);
     }
+
+    @Test
+    public void getData() throws ParseException {
+      HomePage homePage = new HomePage(driver);
+      homePage.open();
+      homePage.clickAcceptCokies();
+      ModelListPage modelListPage = homePage.getBrand("Apple");
+      Assert.assertTrue(modelListPage.getFirstModel().getOpinionPage().isDateSorted());
+    }
+
 
 }
