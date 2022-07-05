@@ -22,7 +22,7 @@ public class WebTest extends Driver {
     public void verifySuccessLogin(){
         HomePage homePage = new HomePage(driver);
         homePage.open();
-        homePage.clickAcceptCokies();
+       // homePage.clickAcceptCokies();
         Assert.assertTrue(homePage.isPageOpened());
         LoginPage loginPage = homePage.getHeader().openLoginForm().correctLogin();
         Assert.assertTrue(loginPage.isLoginSuccesful());
