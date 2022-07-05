@@ -8,15 +8,15 @@ import java.text.ParseException;
 
 public class WebTest extends Driver {
 
-    @Test
-    public void verifyWrongLogin(){
-        HomePage homePage = new HomePage(driver);
-        homePage.open();
-        homePage.clickAcceptCokies();
-        Assert.assertTrue(homePage.isPageOpened());
-        LoginPage loginPage = homePage.getHeader().openLoginForm().wrongLogin();
-        Assert.assertTrue(loginPage.isLoginFailed());
-    }
+//    @Test
+//    public void verifyWrongLogin(){
+//        HomePage homePage = new HomePage(driver);
+//        homePage.open();
+//        homePage.clickAcceptCokies();
+//        Assert.assertTrue(homePage.isPageOpened());
+//        LoginPage loginPage = homePage.getHeader().openLoginForm().wrongLogin();
+//        Assert.assertTrue(loginPage.isLoginFailed());
+//    }
 
     @Test
     public void verifySuccessLogin(){
@@ -51,14 +51,14 @@ public class WebTest extends Driver {
 //        Assert.assertEquals(postedComment, commentTxt);
 //    }
 
-    @Test
-    public void getData() throws ParseException {
-      HomePage homePage = new HomePage(driver);
-      homePage.open();
-      homePage.clickAcceptCokies();
-      ModelListPage modelListPage = homePage.getBrand("Apple");
-      Assert.assertTrue(modelListPage.getFirstModel().getOpinionPage().isDateSorted());
-    }
+//    @Test
+//    public void getData() throws ParseException {
+//      HomePage homePage = new HomePage(driver);
+//      homePage.open();
+//      homePage.clickAcceptCokies();
+//      ModelListPage modelListPage = homePage.getBrand("Apple");
+//      Assert.assertTrue(modelListPage.getFirstModel().getOpinionPage().isDateSorted());
+//    }
 
 
 }
