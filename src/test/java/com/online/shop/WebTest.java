@@ -16,6 +16,7 @@ public class WebTest extends Driver {
         Assert.assertTrue(homePage.isPageOpened());
         LoginPage loginPage = homePage.getHeader().openLoginForm().wrongLogin();
         Assert.assertTrue(loginPage.isLoginFailed());
+
     }
 
     @Test
