@@ -55,7 +55,7 @@ public class WebTest extends Driver {
     public void getData() throws ParseException {
       HomePage homePage = new HomePage(driver);
       homePage.open();
-      homePage.clickAcceptCokies();
+      //homePage.clickAcceptCokies();
       ModelListPage modelListPage = homePage.getBrand("Apple");
       Assert.assertTrue(modelListPage.getFirstModel().getOpinionPage().isDateSorted());
     }
