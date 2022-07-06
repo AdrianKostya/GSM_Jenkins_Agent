@@ -12,7 +12,7 @@ import java.time.Duration;
 
 public class Driver {
 
-    public static WebDriver driver;
+    protected static WebDriver driver;
 
     @BeforeTest
     public void before(){
