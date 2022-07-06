@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends AbstractPage {
 
-@FindBy(xpath = "//*[text()='Reason: User record not found.']")
-private WebElement loginFaidelTxt;
+    @FindBy(xpath = "//*[text()='Reason: User record not found.']")
+    private WebElement loginFaidelTxt;
 
-@FindBy(xpath = "//*[text()='Login successful.']")
-private WebElement loginSucccesfulTxt;
+    @FindBy(xpath = "//*[text()='Login successful.']")
+    private WebElement loginSucccesfulTxt;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -22,7 +22,7 @@ private WebElement loginSucccesfulTxt;
     }
 
     public boolean isLoginSuccesful(){
-       return loginSucccesfulTxt.isDisplayed();
+        return loginSucccesfulTxt.isDisplayed();
     }
 
 

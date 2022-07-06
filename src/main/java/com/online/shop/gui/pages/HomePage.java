@@ -39,9 +39,9 @@ public class HomePage extends AbstractPage {
         return header;
     }
 
-//    public void clickAcceptCokies(){
-//        wait.until(ExpectedConditions.elementToBeClickable(cokieBtn)).click();
-//    }
+    public void clickAcceptCokies(){
+        wait.until(ExpectedConditions.elementToBeClickable(cokieBtn)).click();
+    }
 
     public ModelListPage getBrand(String brand){
         driver.findElement(By.xpath(String.format(brandPhone, brand))).click();

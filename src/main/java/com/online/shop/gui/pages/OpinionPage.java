@@ -22,7 +22,7 @@ public class OpinionPage extends AbstractPage {
     }
 
     public String getTxt(String nickname){
-       return driver.findElement(By.xpath(String.format(myComment, nickname))).getText();
+        return driver.findElement(By.xpath(String.format(myComment, nickname))).getText();
     }
 
     public boolean isDateSorted() throws ParseException {
@@ -33,7 +33,7 @@ public class OpinionPage extends AbstractPage {
         //   convert from WebElement to String List;
         List <String> postedTimeStr = new ArrayList<>();
         for(WebElement eachTime:postedTime) {
-                postedTimeStr.add(eachTime.getText());
+            postedTimeStr.add(eachTime.getText());
         }
         //  parse and convert to Date - example( 2 min ago , or 3 hours ago)
         if(!postedTimeStr.isEmpty()) {
