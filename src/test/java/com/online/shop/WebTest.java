@@ -18,15 +18,15 @@ public class WebTest extends Driver {
 //        Assert.assertTrue(loginPage.isLoginFailed());
 //    }
 
-//    @Test
-//    public void verifySuccessLogin(){
-//        HomePage homePage = new HomePage(driver);
-//        homePage.open();
-//        homePage.clickAcceptCokies();
-//        Assert.assertTrue(homePage.isPageOpened());
-//        LoginPage loginPage = homePage.getHeader().openLoginForm().correctLogin();
-//        Assert.assertTrue(loginPage.isLoginSuccesful());
-//    }
+    @Test
+    public void verifySuccessLogin(){
+        HomePage homePage = new HomePage(driver);
+        homePage.open();
+        //homePage.clickAcceptCokies();
+        Assert.assertTrue(homePage.isPageOpened());
+        LoginPage loginPage = homePage.getHeader().openLoginForm().correctLogin();
+        Assert.assertTrue(loginPage.isLoginSuccesful());
+    }
 
 //    @Test
 //    public void verifyCommentPosted(){
