@@ -30,7 +30,7 @@ public class WebTest extends Driver {
 
     @Test
     public void verifyCommentPosted(){
-        String nickname = "Alexander24";
+        String nickname = "Bruno22";
         String commentTxt = "Like design";
         String brand ="Samsung";
         HomePage homePage = new HomePage(driver);
