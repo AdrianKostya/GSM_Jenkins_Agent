@@ -13,7 +13,7 @@ public class Driver {
 
     @BeforeMethod
     public void before(){
-        System.setProperty("webdriver.chrome.driver", "/Users/adriankostya/selenium/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--headless");
