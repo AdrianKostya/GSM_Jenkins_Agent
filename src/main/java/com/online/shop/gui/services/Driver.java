@@ -11,7 +11,7 @@ public class Driver {
 
     protected static WebDriver driver;
 
-    @BeforeTest
+    @BeforeMethod
     public void before(){
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
