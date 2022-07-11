@@ -57,6 +57,7 @@ public class WebTest extends Driver {
       HomePage homePage = new HomePage(driver);
       homePage.open();
       //homePage.clickAcceptCokies();
+
       ModelListPage modelListPage = homePage.getBrand("Apple");
       Assert.assertTrue(modelListPage.getFirstModel().getOpinionPage().isDateSorted());
     }
